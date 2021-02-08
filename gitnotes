@@ -1,0 +1,107 @@
+MylandmarkTech:          
+  Client: Ebay  
+    E-COMMERCE Web application   
+      1st Deployment = Version 1
+      2nd Deployment = Version 2 
+      3rd Deployment = Version 3
+
+Developers: 
+  2 ON
+  2 MD
+  2 TX
+  2 Buea
+
+version Control systems:
+  GIT --> 
+  SVN --> Sub Version
+  CVS  --> Concurrent Version
+  TFS  -- > Team Foundation Server 
+
+IQ: What is your role in Git as a DevOps Engineer? :
+  1. ONBOARDING OF PROJECTS:
+
+  2.  Create (Configure) a secure and an enabling environment for Developers 
+  3. Create an organisation:
+       This is usually a one-off event 
+  4.  Create a teams and add members
+         https://github.com/orgs/myLandmarckeTechnologies/teams/ebay23
+  5.   create project  repositories 
+        Backend codes
+          https://github.com/myLandmarckeTechnologies/ebay-backend.git
+        Frontend codes 
+   6.  import repositories 
+
+   7. Manage access into repositories 
+
+
+  GitHub - CE = Community Edition 
+    github.com 
+
+  GHE - EE = Enterprise Edition 
+    ghe.mlt.com 
+    ghe.aa.com 
+
+Git installation: 
+  yum install git   
+     = Yum is a package manager for Redhat and Centos servers  
+     = This command installs the git version found in the yum repo 
+
+  yum install git
+
+  git --version 
+
+  yum update 
+
+#!/bin/bash
+cd /opt
+##The below command will download and install all required development libraries to your system.
+yum groupinstall "Development Tools" -y
+yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel curl-devel -y
+yum install wget tar -y
+##https://github.com/git/git/releases
+wget https://github.com/git/git/archive/v2.30.0.tar.gz  -O git-bash.tar.gz
+tar -zxf git-bash.tar.gz
+cd git-2.30.0
+make configure
+./configure --prefix=/usr/local
+##make install command will copy the built program, and its libraries and documentation, to the correct locations.
+make install
+git --version
+
+configure credentials:
+  git config --global user.name "Prof Legah"
+  git config --global user.email "slegah@MylandmarkTech.com"
+  git config --global --list
+
+  git init  = it create a local git repository 
+     
+     db.sh 
+  git status  = 
+
+  git add 
+
+  development =  writing codes       
+                  Untracked files
+
+  stage   = git add 
+
+  production  = git commit = create a Version 
+
+  git commit -m "First db commit"
+
+  working area        staging     localRepo     RemoteRepo    :
+  -----------        -------      ---------     ---------  
+  Untracked files     git add     git commit    git push 
+    red                green     
+
+   git log 
+
+   git add . or git add *
+
+   which command displays all git commits? git log    
+
+   git push command
+
+   git remote add eb  https://github.com/myLandmarckeTechnologies/ebay-backend.git
+   
+
